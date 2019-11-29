@@ -1,4 +1,4 @@
-# Sharing Ctypes Structures and NumPy Arrays in Unrelated Processes Using POSIX Shared Memory in Python
+# Sharing `Ctypes` Structure and `NumPy NdArray` between Unrelated Processes Using POSIX Shared Memory in Python3
 
 The repo demonstrates how to use POSIX shared memory to implement the communication between unrelated processes. You can find here examples of following use cases:
 
