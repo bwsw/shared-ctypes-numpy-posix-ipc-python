@@ -3,7 +3,6 @@ import cv2
 from time import sleep, time
 from shm.reader import SharedMemoryFrameReader
 
-
 if __name__ == '__main__':
 
     shm_r = SharedMemoryFrameReader('frame')
@@ -18,7 +17,7 @@ if __name__ == '__main__':
         f = shm_r.get()
         cv2.imshow('frame', f)
         if cv2.waitKey(1) & 0xFF == ord('q'):
-             break
+            break
         end = time()
         next_sleep = max_sleep - (end - begin)
         next_sleep = 0 if next_sleep <= 0 else next_sleep
