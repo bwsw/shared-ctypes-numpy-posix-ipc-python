@@ -8,7 +8,7 @@ if __name__ == '__main__':
     shm_r = SharedMemoryFrameReader('frame')
 
     fps = 25
-    max_sleep = 1.0 / 25
+    max_sleep = 1.0 / fps
     next_sleep = max_sleep
 
     while True:
